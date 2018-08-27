@@ -3,6 +3,21 @@ ALE Scala Integration                                       *ale-scala-options*
 
 
 ===============================================================================
+sbtio                                                         *ale-scala-sbtio*
+
+`sbtio` requires a running ^1.1.x sbt shell to connect to. It will look
+for this shell by searching upwards from the current working directory
+for the `project/target/active.json` file
+
+g:ale_scala_sbtio_executable                     *g:ale_scala_sbtio_executable*
+                                                 *b:ale_scala_sbtio_executable*
+  Type: |String|
+  Default: `'sbtio'`
+
+  Override the invoked `sbtio` binary.
+
+
+===============================================================================
 scalafmt                                                   *ale-scala-scalafmt*
 
 If Nailgun is used, override `g:ale_scala_scalafmt_executable` like so: >
